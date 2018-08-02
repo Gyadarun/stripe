@@ -1,0 +1,30 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Ebook Web Dev'
+      </h1>
+      <p class="lead">Apprenez tout grace à cet ebook, et soyez embauché à la NASA sous 48h !</p>
+        <form action="/charge" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_l3eL1Y9n9QGBMggBu4yKkEVv"
+            data-amount="77777"
+            data-name="Ebook Web Dev'"
+            data-description="Plus tu codes, plus t'es fort"
+            data-image="/img/marketplace.png"
+            data-locale="auto"
+            data-currency="eur">
+          </script>
+          <script>
+            // Masquer bouton de base pour bouton Perso
+            document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+          </script>
+          <button type="submit" class="btn btn-outline-dark text-white btn-lg">Acheter pour 777.77 €</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <img src="/img/book.png" alt="couverture" class="img-fluid">
+      </div>
+  </div>
+</section>
