@@ -1,0 +1,17 @@
+{
+  "name": "ebook",
+  "version": "1.0.0",
+  "description": "Application pour vendre un eBook",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Amaury",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "stripe": "^6.5.0"
+  }
+}
